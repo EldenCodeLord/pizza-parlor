@@ -58,6 +58,11 @@ Test: "myNewPizza should return price, size, and toppings."
 Code: let myNewPizza = new Pizza(pizza.size, pizza.toppings, pizza.price);
 Expected Output : Pizza {size: Array(3), toppings: Array(5), price: Array(3)}price: (3) [22, 18, 14]size: (3) 
                   ['Large', 'Medium', 'Small']toppings: (5) ['Pineapple', 'Pepperoni', 'Peperoccini', 'Anchovies', 'Black Olives']
+ Test: "it should allow user input for choosing toppings and size."
+ Code:  Pizza.prototype.chooseTopping = function () {
+        this.toppings = chooseTopping(pizza.toppings);
+    }
+  Expected Output: Nothing yet, this is Business logic.                
 ## Setup/Installation Requirements
 
 * Clone this repository to your desktop
