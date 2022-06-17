@@ -24,22 +24,37 @@ Create a website for a pizza company where a user can choose one or more individ
 
 Test: "It should return a Pizza object with two properties for toppings and size"
 Code: let pizza = {};
-   pizza.sizes = ["Large", "Medium", "Small"];
-   pizza.toppings = ["Pineapple", "Pepperoni", "Peperoccini", "Anchovies", "Black Olives"];
-Expected Output: pizza
-  sizes: Array(3)
-  0: "Large"
-  1: "Medium"
-  2: "Small"
-  length: 3
-  [[Prototype]]: Array(0)
-  toppings: Array(5)
-  0: "Pineapple"
-  1: "Pepperoni"
-  2: "Peperoccini"
-  3: "Anchovies"
-  4: "Black Olives"
-  length: 5
+      pizza.sizes = ["Large", "Medium", "Small"];
+      pizza.toppings = ["Pineapple", "Pepperoni", "Peperoccini", "Anchovies", "Black Olives"];
+Expected Output: 
+      pizza
+      sizes: Array(3)
+      0: "Large"
+      1: "Medium"
+      2: "Small"
+      length: 3
+      [[Prototype]]: Array(0)
+      toppings: Array(5)
+      0: "Pineapple"
+      1: "Pepperoni"
+      2: "Peperoccini"
+      3: "Anchovies"
+      4: "Black Olives"
+      length: 5
+
+Test: "Constructor for Pizza"
+Code: function Pizza (size, toppings, price) {
+      this.size = size;
+      this.toppings = toppings;
+      this.price= price;
+    }
+Expected Output: Pizza
+      ƒ Pizza (size, toppings, price) {
+      this.size = size;
+      this.toppings = toppings;
+      this.price= price;
+    }
+
 
 ## Setup/Installation Requirements
 

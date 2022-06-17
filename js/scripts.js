@@ -9,3 +9,4 @@ function Pizza (size, toppings, price) {
   this.toppings = toppings;
   this.price= price;
 }
+
