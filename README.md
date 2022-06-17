@@ -1,4 +1,4 @@
-#_Ori's Pizzeria_
+#_Ori's Pizzeria_#
 
 
 #### _Online Pizza Parlor project
@@ -22,7 +22,7 @@ Create a website for a pizza company where a user can choose one or more individ
 ## Tests
 # _Describe: Pizza()
 
-Test: "It should return a Pizza object with two properties for toppings and size"
+Test: "It should return a Pizza object with two properties for toppings and size".
 Code: let pizza = {};
       pizza.sizes = ["Large", "Medium", "Small"];
       pizza.toppings = ["Pineapple", "Pepperoni", "Peperoccini", "Anchovies", "Black Olives"];
@@ -33,7 +33,6 @@ Expected Output:
       1: "Medium"
       2: "Small"
       length: 3
-      [[Prototype]]: Array(0)
       toppings: Array(5)
       0: "Pineapple"
       1: "Pepperoni"
@@ -42,7 +41,7 @@ Expected Output:
       4: "Black Olives"
       length: 5
 
-Test: "Constructor for Pizza"
+Test: "Constructor for Pizza".
 Code: function Pizza (size, toppings, price) {
       this.size = size;
       this.toppings = toppings;
@@ -55,7 +54,10 @@ Expected Output: Pizza
       this.price= price;
     }
 
-
+Test: "myNewPizza should return price, size, and toppings."
+Code: let myNewPizza = new Pizza(pizza.size, pizza.toppings, pizza.price);
+Expected Output : Pizza {size: Array(3), toppings: Array(5), price: Array(3)}price: (3) [22, 18, 14]size: (3) 
+                  ['Large', 'Medium', 'Small']toppings: (5) ['Pineapple', 'Pepperoni', 'Peperoccini', 'Anchovies', 'Black Olives']
 ## Setup/Installation Requirements
 
 * Clone this repository to your desktop
